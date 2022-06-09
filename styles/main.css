@@ -9,16 +9,41 @@
 
 .header {
     background-color: white;
+    width: 100vw;
+    padding-top: 10px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .image {
+    width: 155px;
+}
+
+.header .menu {
+    padding-top: 10px;
+    padding-bottom: 13px;
 }
 
 .header .link {
     color: #4a4a4a;
+    font-size: 16px;
+    text-transform: uppercase;
+margin: auto 10px;
 }
 
 .main {
-    background-color: #3CDBC0   ;
+    background-color: #3CDBC0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main .text {
     color: #FFFFFF;
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
 }
