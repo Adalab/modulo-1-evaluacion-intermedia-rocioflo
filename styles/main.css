@@ -35,7 +35,7 @@ margin: auto 10px;
 
 .main {
     background-color: #3CDBC0;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,4 +46,29 @@ margin: auto 10px;
     font-size: 30px;
     width: 50%;
     text-align: center;
+}
+
+@media all and (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header .image {
+padding-left: 30px;
+padding-top: 20px;
+padding-bottom: 20px;
+    }
+
+    .header .menu {
+        padding-right: 30px;
+    }
+
+    .header .link {
+        font-size: 16px;
+    }
+
+    .main .text {
+        font-size: 40px;
+    }
 }
