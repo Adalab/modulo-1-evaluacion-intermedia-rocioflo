@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -10,7 +11,7 @@
 .header {
     background-color: white;
     width: 100vw;
-    padding-top: 10px;
+    margin-top: 10px;
     position: sticky;
     display: flex;
     flex-direction: column;
@@ -22,15 +23,20 @@
 }
 
 .header .menu {
-    padding-top: 10px;
-    padding-bottom: 13px;
+    margin-top: 10px;
+    margin-bottom: 13px;
 }
 
 .header .link {
     color: #4a4a4a;
     font-size: 16px;
+    text-decoration: none;
     text-transform: uppercase;
 margin: auto 10px;
+}
+
+.header .link:hover {
+    color: gainsboro;
 }
 
 .main {
@@ -52,23 +58,21 @@ margin: auto 10px;
     .header {
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .header .image {
-padding-left: 30px;
-padding-top: 20px;
-padding-bottom: 20px;
+        margin-top: 0;
+        padding: 20px 30px;
     }
 
     .header .menu {
-        padding-right: 30px;
+       margin: none;
     }
 
     .header .link {
         font-size: 16px;
+        margin: none;
     }
 
     .main .text {
         font-size: 40px;
+        width: 20%;
     }
 }
